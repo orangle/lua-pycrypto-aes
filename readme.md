@@ -4,7 +4,7 @@ Implement pycrypto aes in lua.
 
 I use pycrypto to encrypt with aes in client, and openresty lua-resty-string aes to decrypt in server.
 
-And I cannot easily handle these, because the decrypt content is not the same as source. 
+And I cannot easily handle these, because the decrypt content is not the same as source.
 I known that may be I use lua-resty-string wrong, but I think the best way is to implement pycrypto aes in lua,
 so I use pycrypto source and begin to integrate.
 
@@ -14,10 +14,24 @@ Now I have implemented aes mode ECB, CBC, CFB, OFB. I don't want to implement CT
 
 Very easy:
 
-make  
+```
+make
 make install
+```
 
-You may assign LUA_INCLUDE_DIR and LUA_LIB_DIR when make, default is for openresty with luajit. 
+The default makefile for macos, if you want use it in **Linux**, just modify a little of Makefile. Like:
+
+```
+## Linux/BSD
+PREFIX  ?=          /usr/local/openresty
+LDFLAGS +=         -shared
+
+## OSX (Macports)
+#PREFIX ?=          /opt/local
+#LDFLAGS +=         -bundle -undefined dynamic_lookup
+```
+
+You may assign LUA_INCLUDE_DIR and LUA_LIB_DIR when make, default is for openresty with luajit.
 
 # Use
 

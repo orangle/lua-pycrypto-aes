@@ -1,0 +1,17 @@
+[root@orangleliu test]# python aes.py
+r0ZIS9+pIE7wdpAGpSMhPg==
+iloveniu
+yg0w7NdyLrhLQmVS35k+vw==
+iloveniu
+ypiP/AZAEacTdnPBN5iysA==
+iloveniu
+
+
+[root@orangleliu test]# curl 'http://127.0.0.1:8000/aespy'
+r0ZIS9+pIE7wdpAGpSMhPg==
+iloveniu
+yg0w7NdyLrhLQmVS35k+vw==
+iloveniu
+ypiP/AZAEacTdnPBN5iysA==
+iloveniu
+
