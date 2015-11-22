@@ -19,7 +19,7 @@ make
 make install
 ```
 
-The default makefile for macos, if you want use it in **Linux**, just modify a little of Makefile. Like:
+The default makefile is for macos, if you want use it in **Linux**, just modify a little of Makefile. Like:
 
 ```
 ## Linux/BSD
